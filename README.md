@@ -11,4 +11,4 @@ https://play.google.com/store/apps/details?id=com.mscino.sensornode&hl=en
 3.Run the program
 4.For moving mouse tilt mobile left,right,up and down
 5.For right click cover the light sensor (@top front near speaker/front camera)
-6.In case of not responding or stuck, press ctrl + Alt + Del.
+6.In case of not responding or stuck, press ctrl+Alt+Del.
