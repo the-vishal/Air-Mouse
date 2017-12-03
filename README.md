@@ -1,13 +1,13 @@
 # Android-Controlled-Cursor
-Android sensors controlled mouse cursor(Accelerometer and light intensity)
+Android sensors controlled mouse cursor(Accelerometer and light intensity). 
 ![image](https://qph.ec.quoracdn.net/main-qimg-e29636d1e41654fd5b9367b1739f0ccc)
 
 ## FOR Airmouse_touch.py
 
 -Download Apk provided in repository. 
--Change IP in both apk(in settings screen) as well as script. 
--left top of screen = left top of your PC and similarly other coordinates. 
-![image](https://automatetheboringstuff.com/images/000011.jpg)
+-Change IP in both apk(in settings screen) as well as script.  
+-left top of screen = left top of your PC and similarly other coordinates.  
+![image](https://automatetheboringstuff.com/images/000011.jpg). 
 -swipe on canvas for mouse movement. 
 -for clicks, buttons are there. 
 
