@@ -1,10 +1,12 @@
 # Android-Controlled-Cursor
 Android sensors controlled mouse cursor(Accelerometer and light intensity). 
-![image](https://qph.fs.quoracdn.net/main-qimg-e29636d1e41654fd5b9367b1739f0ccc.webp)
+
 ## FOR Airmouse_touch.py
 
 -Download Apk provided in repository. <br />
 -Change IP in both apk(in settings screen) as well as script.  <br />
+![image](https://github.com/the-vishal/Air-Mouse/blob/master/Images/Screenshot_20181014-182314.png)
+![image](https://github.com/the-vishal/Air-Mouse/blob/master/Images/Screenshot_20181014-182330.png)
 -left top of screen = left top of your PC and similarly other coordinates.   <br />
 ![image](https://automatetheboringstuff.com/images/000011.jpg).  <br />
 -swipe on canvas for mouse movement.  <br />
@@ -15,7 +17,7 @@ Android sensors controlled mouse cursor(Accelerometer and light intensity).
 
 FREE Sensor Node Apk:   <br />
 https://play.google.com/store/apps/details?id=com.mscino.sensornode&hl=en. 
-
+![image](https://qph.fs.quoracdn.net/main-qimg-e29636d1e41654fd5b9367b1739f0ccc.webp)
 1.Select Stream.  <br />
 2.Check Accelerometer and Light Intensity.  <br />
 3.Run the program.  <br />
