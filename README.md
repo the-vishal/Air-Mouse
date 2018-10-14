@@ -7,6 +7,7 @@ Android sensors controlled mouse cursor(Accelerometer and light intensity).
 -Change IP in both apk(in settings screen) as well as script.  <br />
 ![image](https://github.com/the-vishal/Air-Mouse/blob/master/Images/1.png)
 ![image](https://github.com/the-vishal/Air-Mouse/blob/master/Images/2.png)
+
 -left top of screen = left top of your PC and similarly other coordinates.   <br />
 ![image](https://automatetheboringstuff.com/images/000011.jpg).  <br />
 -swipe on canvas for mouse movement.  <br />
