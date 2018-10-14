@@ -1,7 +1,6 @@
 # Android-Controlled-Cursor
 Android sensors controlled mouse cursor(Accelerometer and light intensity). 
-![image](https://qph.ec.quoracdn.net/main-qimg-e29636d1e41654fd5b9367b1739f0ccc)
-
+![image](https://qph.fs.quoracdn.net/main-qimg-e29636d1e41654fd5b9367b1739f0ccc.webp)
 ## FOR Airmouse_touch.py
 
 -Download Apk provided in repository. <br />
