@@ -1,0 +1,6 @@
+BASE_PATTERN = r"([\d]+)"
+PATTERN_CLICK = r"n([\w]+)'"
+PATTERN_CURSOR = r"X=([\b\w\D\.]+)'"
+PATTERN_X = fr"X={BASE_PATTERN}"
+PATTERN_Y = fr"Y={BASE_PATTERN}"
+PORT = 5555
