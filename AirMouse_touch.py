@@ -1,26 +1,30 @@
 import socket
 import time
-from pynput.mouse import Button,Controller
 import re
+
+from pynput.mouse import Button,Controller
+
 
 
 mouse = Controller()
 
-s = socket.socket()         # Create a socket object
-host = '192.168.43.173'    #your ip address
+s = socket.socket()
+
+hostname = socket.gethostname()
+ip_address = socket.gethostbyname(hostname)
 port = 5555
-s.bind((host, port))
+s.bind((ip_address, port))
 
 
-pattern_click = r"n([\w]+)'"
-pattern_cursor =r"X=([\b\w\D\.]+)'"
-pattern_X = r"X=([\d]+)"
-pattern_Y = r"Y=([\d]+)"
+PATTERN_CLICK = r"n([\w]+)'"
+PATTERN_CURSOR = r"X=([\b\w\D\.]+)'"
+PATTERN_X = r"X=([\d]+)"
+PATTERN_Y = r"Y=([\d]+)"
 
 
 
 def mouse_Action():
-      match = re.search(pattern_click,str(url))
+      match = re.search(PATTERN_CLICK,str(url))
       if match:
          print(match.group())
          if "Right" in match.group():
@@ -31,9 +35,9 @@ def mouse_Action():
 
 
       #Cursor
-      match2 = re.search(pattern_cursor,str(url))
+      match2 = re.search(PATTERN_CURSOR,str(url))
       if match2:
-         matchx = re.search(pattern_X,match2.group())
+         matchx = re.search(PATTERN_X,match2.group())
          if matchx:
            #print(matchx.group())
            patx = r"([\d]+)"
@@ -42,7 +46,7 @@ def mouse_Action():
               print(x.group())
 
 
-         matchy = re.search(pattern_Y,match2.group())
+         matchy = re.search(PATTERN_Y,match2.group())
          if matchy:
              #print(matchy.group())
              paty = r"([\d]+)"
