@@ -1,8 +1,9 @@
-from pynput.mouse import Button,Controller
 import socket
 import bs4
 import time
 import math
+
+from pynput.mouse import Button,Controller
 
 ip = '192.168.1.17'
 port = 5555
