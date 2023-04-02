@@ -15,7 +15,7 @@ ip_address = socket.gethostbyname(hostname)
 s.bind((ip_address, PORT))
 
 
-def mouse_Action() -> None:
+def mouse_action() -> None:
     match = re.search(PATTERN_CLICK, str(url))
     if match:
         print(match.group())
@@ -46,5 +46,5 @@ while True:
     c, addr = s.accept()
     url = c.recv(4800)
     # print(url)
-    mouse_Action()
+    mouse_action()
     time.sleep(0)

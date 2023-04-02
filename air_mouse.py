@@ -3,10 +3,10 @@ import time
 import bs4
 
 from pynput.mouse import Button, Controller
+from consts import PORT
 
-PORT = 5555
+
 IP = '192.168.1.17'
-
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((IP, PORT))
