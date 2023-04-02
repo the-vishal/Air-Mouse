@@ -3,13 +3,8 @@ import time
 import re
 
 from pynput.mouse import Button, Controller
-
-
-PATTERN_CLICK = r"n([\w]+)'"
-PATTERN_CURSOR = r"X=([\b\w\D\.]+)'"
-PATTERN_X = r"X=([\d]+)"
-PATTERN_Y = r"Y=([\d]+)"
-PORT = 5555
+from consts import PORT, PATTERN_CLICK, PATTERN_CURSOR, PATTERN_X, PATTERN_Y, \
+    BASE_PATTERN
 
 
 mouse = Controller()
@@ -21,7 +16,7 @@ s.bind((ip_address, PORT))
 
 
 def mouse_Action() -> None:
-    match = re.search(PATTERN_CLICK,str(url))
+    match = re.search(PATTERN_CLICK, str(url))
     if match:
         print(match.group())
         if "Right" in match.group():
@@ -29,25 +24,21 @@ def mouse_Action() -> None:
         elif "Left" in match.group():
             mouse.click(Button.left)
 
-    #Cursor
-    match2 = re.search(PATTERN_CURSOR,str(url))
-    if match2:
-        matchx = re.search(PATTERN_X,match2.group())
-        if matchx:
-            #print(matchx.group())
-            patx = r"([\d]+)"
-        x = re.search(patx, matchx.group())
-        if x:
-            print(x.group())
+    # Cursor
+    match = re.search(PATTERN_CURSOR, str(url))
+    if match:
+        match_x = re.search(PATTERN_X, match.group())
+        if match_x:
+            x = re.search(fr"{BASE_PATTERN}", match_x.group())
+            if x:
+                print(x.group())
 
-        matchy = re.search(PATTERN_Y,match2.group())
-        if matchy:
-            #print(matchy.group())
-            paty = r"([\d]+)"
-            y = re.search(paty,matchy.group())
+        match_y = re.search(PATTERN_Y, match.group())
+        if match_y:
+            y = re.search(fr"{BASE_PATTERN}", match_y.group())
             if y:
                 print(y.group())
-        mouse.position=(5*int(x.group()), 3*int(y.group()))
+        mouse.position = (5 * int(x.group()), 3 * int(y.group()))
 
 
 while True:
@@ -57,4 +48,3 @@ while True:
     # print(url)
     mouse_Action()
     time.sleep(0)
-
